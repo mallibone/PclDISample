@@ -26,6 +26,8 @@ namespace PclDISample.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::GalaSoft.MvvmLight.Resource.String.ApplicationName = global::PclDISample.Droid.Resource.String.ApplicationName;
+			global::GalaSoft.MvvmLight.Resource.String.Hello = global::PclDISample.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -61,7 +63,7 @@ namespace PclDISample.Droid
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
+			public const int OSVersion = 2131034112;
 			
 			static Id()
 			{

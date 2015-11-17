@@ -5,13 +5,20 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using PclDISample.Core.ViewModel;
 
 namespace PclDISample.Droid
 {
     [Activity(Label = "PclDISample.Droid", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
+        #region UI Controls
+
+        private TextView OSVersion => FindViewById<TextView>(Resource.Id.OSVersion);
+
+        #endregion
+
+        private MainViewModel VM => Locator.Instance.Main;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -22,9 +29,7 @@ namespace PclDISample.Droid
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
-
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            OSVersion.Text = VM.OSVersion;
         }
     }
 }
