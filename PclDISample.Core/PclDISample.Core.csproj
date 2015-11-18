@@ -42,7 +42,7 @@
     <Compile Include="ISystemInformationHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\SystemInformationHandlerStub.cs" />
+    <Compile Include="SystemInformationHandlerStub.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,8 +1,4 @@
-﻿using System;
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
+﻿using Android.App;
 using Android.Widget;
 using Android.OS;
 using PclDISample.Core.ViewModel;
@@ -30,6 +26,8 @@ namespace PclDISample.Droid
             // Get our button from the layout resource,
             // and attach an event to it
             OSVersion.Text = VM.OSVersion;
+
+            var mainViewModel = new MainViewModel(new SystemInformationHandler());
         }
     }
 }
