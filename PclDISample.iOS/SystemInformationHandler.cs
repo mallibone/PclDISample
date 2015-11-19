@@ -1,5 +1,4 @@
-﻿using PclDISample.Core;
-using UIKit;
+using PclDISample.Core;
 
 namespace PclDISample.iOS
 {
@@ -7,7 +6,8 @@ namespace PclDISample.iOS
     {
         #region Implementation of ISystemInformationHandler
 
-        public string OSVersion => $"iOS {ObjCRuntime.Constants.Version}";
+        //public string OSVersion => System.Environment.OSVersion.ToString();
+		public string OSVersion => $"iOS {ObjCRuntime.Constants.Version}" ;
 
         #endregion
     }
